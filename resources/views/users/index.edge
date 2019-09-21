@@ -1,0 +1,32 @@
+@layout('layout.index')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Bootstrap Snipp for Datatable</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordred table-striped">
+                        <thead>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </thead>
+                        <tbody></tbody>
+
+                    </table>
+                    <div class="clearfix"></div>
+                    <nav aria-label="pagination">
+                        <ul class="pagination justify-content-end" id="user-pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+@include('users.create')
+@endsection
